@@ -264,7 +264,97 @@ export interface DMChannel {
      * @memberof DMChannel
      * @example "2020-01-01T00:00:00.000Z"
      */
-
+    createdBy: string;
+    /**
+     * The channel created by.
+     * @type {string}
+     * @memberof DMChannel
+     * @see https://guildedapi.com/resources/channel/#channel-object
+     */
+    updatedAt: number;
+    /**
+     * The channel updated at.
+     * @type {number}
+     * @memberof DMChannel
+     * @example "2020-01-01T00:00:00.000Z"
+     */
+    contentType: string;
+    /**
+     * The channel content type.
+     * @type {string}
+     * @memberof DMChannel
+     * @see https://guildedapi.com/resources/channel/#channel-object
+     */
+    archivedAt: number;
+    /**
+     * The channel archived at.
+     * @type {number}
+     * @memberof DMChannel
+     * @example "2020-01-01T00:00:00.000Z"
+     */
+    autoArchiveAt: number;
+    /**
+     * The channel auto archive at.
+     * @type {number}
+     * @memberof DMChannel
+     * @example "2020-01-01T00:00:00.000Z"
+     */
+    archivedBy: string;
+    /**
+     * The channel archived by.
+     * @type {string}
+     * @memberof DMChannel
+     * @see https://guildedapi.com/resources/channel/#channel-object
+     */
+    parentChannelId: string;
+    /**
+     * The channel parent channel id.
+     * @type {string}
+     * @memberof DMChannel
+     * @see https://guildedapi.com/resources/channel/#channel-object
+     */
+    deletedAt: number;
+    /**
+     * The channel deleted at.
+     * @type {number}
+     * @memberof DMChannel
+     * @example "2020-01-01T00:00:00.000Z"
+     */ 
+    createdByWebhookId: string;
+    /**
+     * The channel created by webhook id.
+     * @type {string}
+     * @memberof DMChannel
+     * @see https://guildedapi.com/resources/channel/#channel-object
+     */
+    archivedByWebhookId: string;
+    /**
+     *  The channel archived by webhook id.
+     * @type {string}
+     * @memberof DMChannel
+     * @see https://guildedapi.com/resources/channel/#channel-object
+     */
+    dmType: string;
+    /**
+     * The channel dm type.
+     * @type {string}
+     * @memberof DMChannel
+     * @see https://guildedapi.com/resources/channel/#channel-object
+     */
+    ownerId: string;
+    /**
+     * The channel owner id.
+     * @type {string}
+     * @memberof DMChannel
+     * @see https://guildedapi.com/resources/channel/#channel-object
+     */
+    voiceParticipants?: string[];
+    /**
+     * The channel voice participants.
+     * @type {string[]}
+     * @memberof DMChannel
+     * @example ["user1", "user2"]
+     */         
 } 
 
 export type ChannelType = 'Team' | 'DM';
