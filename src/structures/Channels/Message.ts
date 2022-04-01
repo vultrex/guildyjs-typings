@@ -1,3 +1,6 @@
+/**
+ * @see https://guildedapi.com/resources/channel/#message-object
+ */
 export interface Message {
     /**
      * The message id.
