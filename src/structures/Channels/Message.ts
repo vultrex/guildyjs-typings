@@ -43,7 +43,7 @@ export interface Message {
      * @memberof Message
      * @see https://guildedapi.com/resources/channel/#message-object
      */
-    deletedAt: number; 
+    deletedAt: number;
     /**
      * The message reactions.
      * @type {string[]}
@@ -78,7 +78,7 @@ export interface Message {
      * @memberof Message
      * @see https://guildedapi.com/resources/channel/#message-object
      */
-    type: string;     
+    type: string;
 }
 
 export type MessageType = 'default' | 'system'; 
