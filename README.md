@@ -1,0 +1,2 @@
+# guildyjs-typings
+ guildyjs typings
